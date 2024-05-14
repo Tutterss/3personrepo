@@ -22,7 +22,18 @@
             kilometres = miles * MILES_FACTOR;
             Console.WriteLine($"The value you entered as miles converted to kilometres is equal to {kilometres:F2}km ");
             Console.ReadLine();
-            
+
+            //This code will display a rectangle made of stars to the screen
+            for (int row = 1; row <= 10; row++)
+            {
+                for (int col = 1; col <= 50; col++)
+                {
+                    Console.Write('*');
+                }
+                Console.WriteLine();
+            }
+            Console.ReadLine();
+
             //this is a calculator that workds out the modular division of 2 numbers!
             int num1, num2, answer;
             num1 = 0;
@@ -39,6 +50,8 @@
                 }
                 Console.WriteLine($"\n Your answer was {answer}");
             }
+
+            
         }
     }
 }
